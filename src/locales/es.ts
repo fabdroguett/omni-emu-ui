@@ -1,0 +1,433 @@
+export const es = {
+  app: {
+    name: 'OmniEmu',
+    tagline: 'Gestor de descargas y biblioteca de emulación'
+  },
+  nav: {
+    downloads: 'Descargas',
+    dashboard: 'Dashboard',
+    diagnostics: 'Diagnóstico',
+    structure: 'Estructura',
+    watcher: 'Watcher',
+    monitor: 'Monitor',
+    explorer: 'Explorador',
+    library: 'Biblioteca',
+    bigbox: 'BigBox',
+    settings: 'Ajustes'
+  },
+  common: {
+    add: 'Añadir',
+    cancel: 'Cancelar',
+    save: 'Guardar',
+    delete: 'Eliminar',
+    edit: 'Editar',
+    close: 'Cerrar',
+    confirm: 'Confirmar',
+    retry: 'Reintentar',
+    pause: 'Pausar',
+    resume: 'Reanudar',
+    remove: 'Eliminar',
+    download: 'Descargar',
+    import: 'Importar',
+    export: 'Exportar',
+    search: 'Buscar',
+    filter: 'Filtrar',
+    sort: 'Ordenar',
+    clear: 'Limpiar',
+    selectAll: 'Seleccionar todo',
+    deselectAll: 'Deseleccionar todo',
+    loading: 'Cargando...',
+    error: 'Error',
+    success: 'Éxito',
+    warning: 'Advertencia',
+    info: 'Información',
+    yes: 'Sí',
+    no: 'No',
+    ok: 'Aceptar',
+    apply: 'Aplicar',
+    reset: 'Restablecer',
+    default: 'Predeterminado',
+    optional: 'Opcional',
+    required: 'Requerido',
+    enabled: 'Activado',
+    disabled: 'Desactivado',
+    active: 'Activo',
+    inactive: 'Inactivo',
+    pending: 'Pendiente',
+    completed: 'Completado',
+    failed: 'Fallido',
+    unknown: 'Desconocido',
+    none: 'Ninguno',
+    all: 'Todos',
+    recent: 'Recientes',
+    today: 'Hoy',
+    yesterday: 'Ayer',
+    thisWeek: 'Esta semana',
+    thisMonth: 'Este mes'
+  },
+  downloads: {
+    title: 'Descargas',
+    empty: 'No hay descargas',
+    emptyFilter: 'No hay descargas con este filtro',
+    addUrl: 'Añadir URL',
+    addUrls: 'Añadir URLs',
+    importFile: 'Importar archivo',
+    grabLinks: 'Capturar enlaces',
+    urlPlaceholder: 'https://ejemplo.com/archivo.zip',
+    urlsPlaceholder: 'Una URL por línea',
+    destination: 'Carpeta de destino',
+    connections: 'Conexiones',
+    console: 'Consola',
+    autoDetect: 'Auto-detectar',
+    sendToGameHub: 'Enviar a GameHub al terminar',
+    startNow: 'Iniciar ahora',
+    status: {
+      queued: 'En cola',
+      connecting: 'Conectando',
+      downloading: 'Descargando',
+      processing: 'Procesando',
+      paused: 'Pausado',
+      completed: 'Completado',
+      error: 'Error'
+    },
+    actions: {
+      pause: 'Pausar',
+      resume: 'Reanudar',
+      retry: 'Reintentar',
+      cancel: 'Cancelar',
+      remove: 'Eliminar de la lista',
+      details: 'Detalles',
+      openFile: 'Abrir archivo',
+      openFolder: 'Abrir carpeta',
+      copyUrl: 'Copiar URL',
+      copyPath: 'Copiar ruta'
+    },
+    toolbar: {
+      searchPlaceholder: 'Buscar descargas...',
+      filterStatus: 'Filtrar por estado',
+      filterConsole: 'Filtrar por consola',
+      sortBy: 'Ordenar por',
+      groupByDay: 'Agrupar por día',
+      selectedCount: '{count} seleccionadas',
+      clearSelection: 'Limpiar selección'
+    },
+    queue: {
+      active: 'activas',
+      queued: 'en cola',
+      completed: 'completadas',
+      speed: 'velocidad total'
+    },
+    details: {
+      title: 'Detalles de la descarga',
+      fileInfo: 'Información del archivo',
+      progress: 'Progreso',
+      speed: 'Velocidad',
+      eta: 'Tiempo restante',
+      url: 'URL original',
+      headers: 'Cabeceras',
+      segments: 'Segmentos',
+      hashes: 'Hashes',
+      verification: 'Verificación',
+      sendStatus: 'Estado de envío'
+    },
+    toast: {
+      added: '{count} descarga{count, plural, one {} other {s}} añadida{count, plural, one {} other {s}}',
+      clipboard: '{count} URL{count, plural, one {} other {s}} en portapapeles',
+      clipboardAction: 'Añadir',
+      clipboardHosts: '{count} enlace{count, plural, one {} other {s}} de file host detectado{count, plural, one {} other {s}}',
+      clipboardHostsAction: 'Abrir grabber',
+      external: '{count} descarga{count, plural, one {} other {s}} añadida{count, plural, one {} other {s}} desde el exterior',
+      telegram: 'Importado desde Telegram: {name}',
+      queueDone: 'Cola completada: {count} descarga{count, plural, one {} other {s}}',
+      datError: 'Error importando DAT',
+      datImported: '{count} DAT{count, plural, one {} other {s}} importado{count, plural, one {} other {s}}',
+      dropNothing: 'No se detectaron URLs ni archivos válidos',
+      reprocessApplied: '{count} entrad{count, plural, one {a} other {as}} aplicada{count, plural, one {} other {s}}',
+      reprocessHistory: 'Ver historial'
+    }
+  },
+  library: {
+    title: 'Biblioteca',
+    games: 'juegos',
+    totalSize: 'Tamaño total',
+    consoles: 'consolas',
+    verified: 'Verificado',
+    unverified: 'Sin verificar',
+    scan: 'Escanear',
+    importDat: 'Importar DAT',
+    exportDat: 'Exportar DAT',
+    verify: 'Verificar',
+    organize: 'Organizar',
+    searchPlaceholder: 'Buscar juegos...',
+    filterConsole: 'Filtrar por consola',
+    columns: {
+      name: 'Juego',
+      console: 'Consola',
+      region: 'Región',
+      size: 'Tamaño',
+      status: 'Estado',
+      actions: 'Acciones'
+    }
+  },
+  diagnostics: {
+    title: 'Diagnóstico',
+    tabs: {
+      dats: 'DATs instalados',
+      scan: 'Escanear',
+      verify: 'Verificar'
+    },
+    dats: {
+      name: 'DAT',
+      console: 'Consola',
+      entries: 'Entradas',
+      version: 'Versión',
+      status: 'Estado',
+      actions: 'Acciones',
+      statuses: {
+        ok: 'Actualizado',
+        outdated: 'Desactualizado',
+        missing: 'Faltante'
+      }
+    },
+    scan: {
+      title: 'Escanear biblioteca',
+      description: 'Busca nuevos archivos, verifica hashes y actualiza la base de datos',
+      progress: 'Progreso del escaneo',
+      filesScanned: 'Archivos escaneados',
+      newGames: 'Nuevos juegos',
+      errors: 'Errores',
+      start: 'Iniciar escaneo',
+      restart: 'Reiniciar'
+    },
+    verify: {
+      title: 'Verificar integridad',
+      description: 'Comprueba hashes contra DATs y detecta archivos corruptos',
+      game: 'Juego',
+      console: 'Consola',
+      hash: 'Hash',
+      status: 'Estado',
+      statuses: {
+        match: 'Hash coincide',
+        mismatch: 'Hash no coincide',
+        missing: 'Sin DAT'
+      }
+    }
+  },
+  watcher: {
+    title: 'Watcher',
+    tabs: {
+      sources: 'Fuentes',
+      queue: 'Cola de transferencia',
+      settings: 'Configuración'
+    },
+    sources: {
+      label: 'Carpeta',
+      path: 'Ruta',
+      recursive: 'Recursivo',
+      status: 'Estado',
+      filesFound: 'Archivos',
+      actions: 'Acciones',
+      statuses: {
+        idle: 'Activo',
+        scanning: 'Escaneando',
+        offline: 'Sin conexión'
+      },
+      addSource: 'Añadir carpeta',
+      editSource: 'Editar',
+      deleteSource: 'Eliminar',
+      startScan: 'Escanear',
+      pauseScan: 'Pausar'
+    },
+    queue: {
+      file: 'Archivo',
+      source: 'Origen',
+      progress: 'Progreso',
+      speed: 'Velocidad',
+      status: 'Estado',
+      statuses: {
+        waiting: 'En espera',
+        copying: 'Copiando',
+        verifying: 'Verificando',
+        done: 'Completado',
+        error: 'Error'
+      }
+    },
+    settings: {
+      dryRun: 'Modo simulación (dry-run)',
+      dryRunDesc: 'Solo registra qué se haría sin copiar archivos',
+      autoExtract: 'Extraer archivos automáticamente',
+      autoExtractDesc: 'Descomprime .zip/.7z/.rar al detectarlos',
+      deleteAfterCopy: 'Eliminar origen tras copiar',
+      deleteAfterCopyDesc: 'Mueve el archivo en lugar de copiarlo',
+      verifyHash: 'Verificar contenido (hash)',
+      verifyHashDesc: 'Comprueba que el archivo copiado es idéntico',
+      concurrency: 'Concurrencia de transferencias',
+      batchSize: 'Tamaño de lote',
+      rescanInterval: 'Intervalo de re-escaneo'
+    }
+  },
+  explorer: {
+    title: 'Explorador',
+    drives: 'Unidades',
+    selectDrive: 'Seleccionar unidad',
+    path: 'Ruta',
+    name: 'Nombre',
+    type: 'Tipo',
+    size: 'Tamaño',
+    modified: 'Modificado',
+    actions: 'Acciones',
+    file: 'Archivo',
+    folder: 'Carpeta',
+    up: 'Subir',
+    refresh: 'Actualizar',
+    viewGrid: 'Vista cuadrícula',
+    viewList: 'Vista lista',
+    copy: 'Copiar',
+    download: 'Descargar',
+    delete: 'Eliminar',
+    selected: '{count} seleccionado{count, plural, one {} other {s}}'
+  },
+  settings: {
+    title: 'Ajustes',
+    tabs: {
+      general: 'General',
+      appearance: 'Apariencia',
+      downloads: 'Descargas',
+      library: 'Biblioteca',
+      transfer: 'Transferencia',
+      watcher: 'Watcher',
+      network: 'Red',
+      emulators: 'Emuladores',
+      advanced: 'Avanzado'
+    },
+    experience: {
+      title: 'Experiencia',
+      gamer: { name: 'Jugador', desc: 'Biblioteca grande, lanzamiento rápido, overlays mínimos' },
+      collector: { name: 'Coleccionista', desc: 'DATs, escaneo, auditoría, renombrado, metadatos' },
+      developer: { name: 'Desarrollador', desc: 'Logs, consola, red, rendimiento, emuladores' },
+      custom: { name: 'Personalizado', desc: 'Tu configuración a medida' }
+    },
+    environment: {
+      title: 'Entorno',
+      pc: 'PC de sobremesa',
+      handheld: 'Portátil / Handheld'
+    },
+    appearance: {
+      theme: 'Tema',
+      themes: { light: 'Claro', dark: 'Oscuro', system: 'Sistema' },
+      accentColor: 'Color de acento',
+      density: 'Densidad',
+      densities: { compact: 'Compacta', comfortable: 'Confortable', spacious: 'Espaciosa' },
+      rgbMode: 'Modo RGB',
+      rgbModes: { static: 'Estático', rainbow: 'Arcoíris', breathing: 'Respiración', reactive: 'Reactivo' }
+    },
+    downloads: {
+      autoExtract: 'Extraer archivos automáticamente',
+      autoExtractDesc: 'Descomprime .zip/.7z/.rar al finalizar',
+      deleteArchive: 'Eliminar archivo comprimido tras extraer',
+      computeHashes: 'Calcular hashes (CRC32, MD5, SHA1)',
+      skipExisting: 'Saltarse archivos ya existentes',
+      maxConcurrent: 'Máx. descargas simultáneas',
+      connectionsPerDownload: 'Conexiones por descarga',
+      speedLimit: 'Límite de velocidad global (0 = ilimitado)',
+      downloadFolder: 'Carpeta de descargas',
+      libraryFolder: 'Carpeta de biblioteca'
+    },
+    library: {
+      organizeByConsole: 'Organizar por consola',
+      organizeByConsoleDesc: 'Crea subcarpetas por sistema',
+      folderStyle: 'Estilo de carpetas',
+      folderStyles: { name: 'Nintendo - Game Boy Advance', esde: 'gba (ES-DE)' },
+      renameToDat: 'Renombrar según DAT verificado',
+      cleanNames: 'Limpieza de nombres',
+      cleanNamesDesc: 'Elimina acentos y símbolos',
+      autoOrganize: 'Auto-organizar (próximamente)'
+    },
+    transfer: {
+      destinationType: 'Tipo de destino',
+      destinationTypes: { drive: 'Unidad (SD/Disco)', mtp: 'MTP (Teléfono)' },
+      rootFolder: 'Carpeta raíz en destino',
+      autoSend: 'Auto-enviar al terminar descarga',
+      sendOnlyRoms: 'Solo enviar ROMs (no manuales/covers)',
+      verifyCopies: 'Verificar copias (hash)',
+      autoRepair: 'Re-enviar archivos faltantes al conectar'
+    },
+    watcher: {
+      enabled: 'Watcher activado',
+      dryRun: 'Modo simulación (dry-run)',
+      dryRunDesc: 'Solo registra sin copiar',
+      autoExtract: 'Extraer archivos automáticamente',
+      deleteAfterCopy: 'Eliminar origen tras copiar',
+      verifyHash: 'Verificar contenido (hash)',
+      concurrency: 'Concurrencia',
+      batchSize: 'Tamaño de lote',
+      rescanInterval: 'Re-escaneo (min)'
+    },
+    network: {
+      bridgeEnabled: 'Habilitar puente del navegador',
+      bridgeEnabledDesc: 'Permite capturar descargas desde el navegador',
+      bridgePort: 'Puerto',
+      bridgeToken: 'Token compartido (opcional)',
+      userAgent: 'User Agent personalizado'
+    },
+    advanced: {
+      notifications: 'Notificaciones nativas',
+      notifyLargeOnly: 'Solo notificar transferencias grandes',
+      notifyThreshold: 'Umbral de notificación',
+      floatingWindow: 'Ventana flotante',
+      floatingOnlyActive: 'Solo cuando hay actividad',
+      floatingSticky: 'Siempre encima (sticky)',
+      autoUpdate: 'Comprobar actualizaciones automáticamente',
+      dataDir: 'Directorio de datos',
+      clearCache: 'Limpiar caché',
+      exportConfig: 'Exportar configuración',
+      importConfig: 'Importar configuración'
+    }
+  },
+  dialogs: {
+    add: { title: 'Añadir descarga', submit: 'Añadir' },
+    import: { title: 'Importar', submit: 'Importar' },
+    grabber: { title: 'Link Grabber', submit: 'Capturar' },
+    settings: { title: 'Ajustes' },
+    details: { title: 'Detalles' },
+    remove: { title: 'Eliminar descargas', confirm: '¿Eliminar {count} descarga{count, plural, one {} other {s}} seleccionada{count, plural, one {} other {s}}?', submit: 'Eliminar' },
+    stats: { title: 'Estadísticas' },
+    shortcuts: { title: 'Atajos de teclado' },
+    conflict: { title: 'Conflicto de archivo' },
+    password: { title: 'Contraseña requerida' },
+    onboarding: { title: 'Bienvenido a OmniEmu' },
+    reprocess: { title: 'Reprocesar' },
+    audit: { title: 'Auditoría' },
+    decomps: { title: 'Descomprimir' },
+    sorter: { title: 'Solo ordenar' }
+  },
+  shortcuts: {
+    title: 'Atajos de teclado',
+    global: 'Globales',
+    downloads: 'Descargas',
+    navigation: 'Navegación',
+    list: 'Lista',
+    keys: {
+      newDownload: 'Nueva descarga',
+      import: 'Importar',
+      grabber: 'Link Grabber',
+      settings: 'Ajustes',
+      library: 'Biblioteca',
+      dashboard: 'Dashboard',
+      shortcuts: 'Atajos',
+      stats: 'Estadísticas',
+      toggleSidebar: 'Alternar barra lateral',
+      commandPalette: 'Paleta de comandos',
+      selectAll: 'Seleccionar todo',
+      clearSelection: 'Limpiar selección',
+      pause: 'Pausar/Reanudar',
+      retry: 'Reintentar',
+      delete: 'Eliminar',
+      details: 'Detalles',
+      up: 'Arriba',
+      down: 'Abajo',
+      enter: 'Enter',
+      escape: 'Esc'
+    }
+  }
+}
